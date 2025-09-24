@@ -52,6 +52,12 @@ table {
   ========================================
 */
 
+*:before
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 /*
   ========================================
   Clearfix
@@ -84,6 +90,14 @@ table {
   padding-right: 30px;
   width: 960px;
 }
+
+.col-1-3 {
+  width: 33.33%;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+
 /*
   ========================================
   Typography
