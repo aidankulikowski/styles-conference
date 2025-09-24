@@ -58,32 +58,6 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/*
-  ========================================
-  Clearfix
-  ========================================
-*/
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: both;
-  *zoom: 1;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .container {
   margin: 0 auto;
   padding-left: 30px;
@@ -96,6 +70,19 @@ table {
 }
 .col-2-3 {
   width: 66.66%;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*
