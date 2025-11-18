@@ -115,7 +115,7 @@ body {
 }
 .group {
   clear: both;
-  zoom: 1;
+  *zoom: 1;
 }
 
 /*
@@ -192,10 +192,6 @@ em {
 .lead p {
   font-size: 21px;
   line-height: 33px;
-}
-li{
-  float: left;
-  margin: 0 20px;
 }
 
 /*
@@ -301,37 +297,13 @@ p a {
 .nav {
   text-align: right;
 }
-
-.navigation ul {
-  font: bold 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-}
-.navigation li {
+.nav li {
   display: inline-block;
-  margin:0 10px;
-  vertical-align:top;
+  margin: 0 10px;
+  vertical-align: top;
 }
-.navigation a {
-  background: #395870;
-  background: linear-gradient(#49708f, #293f50);
-  border-right: 1px solid rgba(0, 0, 0, .3);
-  color: #fff;
-  padding: 12px 20px;
-  text-decoration: none;
-}
-.navigation a:hover {
-  background: #314b60;
-  box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .3);
-}
-.navigation li:first-child a {
-  border-radius: 4px 0 0 4px;
-}
-.navigation li:last-child a {
-  border-right: 0;
-  margin-right:0;
-  border-radius: 0 4px 4px 0;
+.nav li:last-child {
+  margin-right: 0;
 }
 
 /*
@@ -356,12 +328,11 @@ p a {
 .teaser a:hover h3 {
   color: #a9b2b9;
 }
-
 .teaser img {
-border-radius: 5px;
-display: block;
-margin-bottom: 22px;
-max-width: 100%
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  max-width: 100%
 }
 
 /*
@@ -369,11 +340,36 @@ max-width: 100%
   Speakers
   ========================================
 */
-  
+
+.speaker {
+  margin-bottom: 44px;
+}
 .speaker-info {
   border: 1px solid #dfe2e5;
   border-radius: 5px;
   margin-top: 88px;
-  padding: 22px 0;
+  padding-bottom: 22px;
   text-align: center;
+}
+.speaker-info img {
+  border-radius: 50%;
+  height: 130px;
+  margin: -66px 0 22px 0;
+  vertical-align: top;
+}
+
+/*
+  ========================================
+  Venue
+  ========================================
+*/
+
+.venue-theatre {
+  margin-bottom: 66px;
+}
+.venue-hotel {
+  margin-bottom: 22px;
+}
+.venue-map {
+  height: 264px;
 }
